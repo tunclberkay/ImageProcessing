@@ -1,0 +1,3 @@
+def log_donus (r, c):
+s = c*np.log(1+r)
+return s

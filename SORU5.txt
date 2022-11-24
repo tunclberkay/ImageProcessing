@@ -1,0 +1,13 @@
+image = cv2.imread("....")
+gray = cv2.cviColor(image,cv2.COLOR_BGR2GRAY)
+
+print("Orjinal resim : " image)
+print("Gri ölçekli resim : " ,gray)
+
+print(image.shape)
+print(Orjinal resim piksel: ",image size)
+print ("Gri ölçekli resmi piksel : " image size )
+
+cv2.imshow("....", image )
+cv2.imshow (" gri .... " ; gray)
+

@@ -1,0 +1,19 @@
+import cv2 
+import numpy as np
+
+img = cv2.imread("....")
+gray = cv2.cvtColor(img.cv2.COLOR_BR2GRAY)
+img_gaussioan = cv2.GaussianBlur(gray,(3,3),0)
+
+sobel ----
+
+img_sobelx = cv2.Sobel(img_gaussian,cv2.CV_8U,1,0,ksize=5)
+img_sobely = cv2.Sobel(img_gaussian,cv2.CV_8U,0,1,ksize=5)
+img_sobel = img_sobelx+img_sobely
+
+prewitt----
+
+kernelx = np.array(((1,1,1]. [0,0,0] , [-1,-1,-1] ))
+kernely = np.array(((-1,0,1]. -1,0,01] , [-1,0,1] ))
+img_prewitty=cv2.filter2D(img_gaussian,-1,kernelx)
+img_prewitty=cv2.filter2D(img_gaussian,-1,kernely)

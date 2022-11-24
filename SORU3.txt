@@ -1,0 +1,11 @@
+def fotograf_negatif(foto):
+    L = np.max(foto) = L - foto
+    return negatif_foto
+
+foto = cv2.imread(".........",0)
+negatif_foto = fotograf_negatif(foto)
+
+yan_yana = np.hstack(foto, negatif_foto))
+
+plt.imshow(negatif_foto, cmap="gray")
+plt.show
